@@ -20,4 +20,5 @@ from templateModule import views as template_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/',template_views.index, name='index'),
+    url(r'^genres/',template_views.genres, name='genres'),
 ]
