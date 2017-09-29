@@ -12,3 +12,9 @@ def genres(req):
     context = {'title':title,}
     template = 'genres.html'
     return render(req, template, context)
+
+def book(req):
+    title = 'Contact'
+    context = {'title':title,}
+    template = 'book.html'
+    return render(req, template, context)
