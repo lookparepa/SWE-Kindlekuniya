@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^index/',template_views.index, name='index'),
     url(r'^genres/',template_views.genres, name='genres'),
     url(r'^book/',template_views.book, name='book'),
+    url(r'^contact/',template_views.contact, name='contact'),
 ]

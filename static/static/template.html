@@ -85,6 +85,9 @@
     .card-text {
         font-size: 85%;
     }
+
+    {% block style %}
+    {% endblock %}
 </style>
 
 <body>
@@ -107,7 +110,7 @@
       <div class="row">
           <div class="col-sm-8">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="">Home</a></li>
+            <li class=""><a href="">Home</a></li>
            
             <li class="dropdown">
               <a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories 
@@ -149,35 +152,8 @@
 
 
     <div class="album text-muted">
-      <div class="container">
-        <div class="row flex grid ">
-          <div class="col-md-3 grid-item">
-            <div class="thumbnail grid-item">
-                <img class="d-flex mr-3" src="{% static 'img/comics.jpg' %} " alt="Generic placeholder image">
-                <!-- <p class="card-text"><center>X-men "Days of future past"</center></p> -->
-                <center><a href="">X-men "Days of future past"</a></center>
-            </div>
-          </div>
-          <div class="col-md-3 grid-item">
-            <div class="thumbnail grid-item">
-                <img class="d-flex mr-3" src="{% static 'img/history.jpg' %}" alt="Generic placeholder image">
-                <center><a href="">A People History</a></center>
-            </div>
-          </div>
-          <div class="col-md-3 grid-item">
-            <div class="thumbnail grid-item">
-                <img class="d-flex mr-3" src="{% static 'img/comics.jpg' %}" alt="Generic placeholder image">
-                <center><a href="">X-men "Days of future past"</a></center>
-              </div>
-          </div>
-          <div class="col-md-3 grid-item">
-            <div class="thumbnail grid-item">
-                <img class="d-flex mr-3" src="{% static 'img/comics.jpg' %}" alt="Generic placeholder image">
-                <center><a href="">X-men "Days of future past"</a></center>
-            </div>
-          </div>
-        </div>
-      </div>
+        {% block content %}
+        {% endblock %}
     </div>
 
                 

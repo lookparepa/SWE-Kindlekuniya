@@ -18,3 +18,9 @@ def book(req):
     context = {'title':title,}
     template = 'book.html'
     return render(req, template, context)
+
+def contact(req):
+    title = 'Contact'
+    context = {'title':title,}
+    template = 'contact.html'
+    return render(req, template, context)
