@@ -10,6 +10,7 @@
   <link rel="stylesheet"  href='{% static "css/main.css" %}'>
   <script src='{% static "js/jquery.min.js" %}'></script>
   <script src='{% static "js/bootstrap.min.js" %}'></script>
+  <link rel="icon" href='{% static "img/favicon.ico" %}'>
 </head>
 <style>
     body{
@@ -104,9 +105,8 @@
           <div class="row">
             <div class="col-sm-6" style="text-align:center"><img class="" src="{% static 'img/comics.jpg' %}"  width=250px/></div>
             <div class="col-sm-6" style="">
-              <h1>Hello World!</h1>
-              <p>Resize the browser window to see the effect.</p>
-              <h4>Price : 200</h4> <a href="">
+              {% block content %}
+              {% endblock %}
               <br/>
               
               <a href="#"><img src="{% static 'img/ShoppingCart.png' %} " width=50px/></a>
